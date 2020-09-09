@@ -2,6 +2,8 @@
 <manifest> 
 <remote name="bitbucket"
   fetch="https://bitbucket.org/" />  
+<remote name="github"
+  fetch="https://github.com/" />
   <project name="PixelExperience-Devices/device_samsung_hero-common" path="device/samsung/hero-common" remote="github" revision="ten" />
   <project name="pixelexperience-devices/vendor_samsung_hero-common" path="vendor/samsung/hero-common" remote="bitbucket" revision="ten" />
   <project name="PixelExperience-Devices/kernel_samsung_universal8890" path="kernel/samsung/universal8890" remote="github" revision="ten" />
