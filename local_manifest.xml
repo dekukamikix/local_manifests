@@ -8,5 +8,4 @@
   <project name="PixelExperience-Devices/device_samsung_hero2lte" path="device/samsung/hero2lte" remote="github" revision="ten" />
   <project name="pixelexperience-devices/vendor_samsung_universal8890" path="vendor/samsung/universal8890" remote="bitbucket" revision="ten" />
   <project name="PixelExperience-Devices/hardware_samsung" path="hardware/samsung" remote="github" revision="ten" />
-
 </manifest>
