@@ -1,11 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<manifest> 
-<remote name="bitbucket"
-  fetch="https://bitbucket.org/" />  
-  <project name="PixelExperience-Devices/device_samsung_hero-common" path="device/samsung/hero-common" remote="github" revision="ten" />
-  <project name="pixelexperience-devices/vendor_samsung_hero-common" path="vendor/samsung/hero-common" remote="bitbucket" revision="ten" />
-  <project name="PixelExperience-Devices/kernel_samsung_universal8890" path="kernel/samsung/universal8890" remote="github" revision="ten" />
-  <project name="PixelExperience-Devices/device_samsung_hero2lte" path="device/samsung/hero2lte" remote="github" revision="ten" />
-  <project name="pixelexperience-devices/vendor_samsung_universal8890" path="vendor/samsung/universal8890" remote="bitbucket" revision="ten" />
-  <project name="PixelExperience-Devices/hardware_samsung" path="hardware/samsung" remote="github" revision="ten" />
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="pixel-devices-blobs"
+          fetch="https://gitlab.pixelexperience.org/android/vendor-blobs"
+          revision="twelve" />
+  <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="twelve"
+          review="gerrit.pixelexperience.org" />
+  <remote name="chaldea"
+          fetch="ssh://git@github.com/chaldeaprjkt"
+          revision="12" />
+  
+  <remove-project name="packages/resources/devicesettings" />
+
+  <!-- Surya Device-specific sources -->
+  <project name="silont-project/device_xiaomi_surya" path="device/xiaomi/surya" remote="github" revision="12-test"/>
+  <project name="silont-project/kernel_xiaomi_surya" path="kernel/xiaomi/surya" remote="github" revision="staging" clone-depth="1"/>
+  <project name="silont-project/vendor_xiaomi_surya" path="vendor/xiaomi/surya" remote="github" revision="12-test" clone-depth="1"/>
+  <project name="vendor_xiaomi-firmware" path="vendor/xiaomi-firmware" remote="pixel-devices-blobs" />
+  
+  <!-- Vayu Device-specific sources -->
+  <project name="device_xiaomi_vayu" path="device/xiaomi/vayu" remote="chaldea"/>
+  <project name="nullxception/kernel_xiaomi_vayu" path="kernel/xiaomi/vayu" remote="github" revision="staging" clone-depth="1"/>
+  <project name="vendor_xiaomi_vayu" path="vendor/xiaomi/vayu" remote="chaldea" clone-depth="1"/>
+
+  <!-- other needed sources -->
+  <project name="silont-project/silont-clang" path="prebuilts/clang/host/linux-x86/clang-silont" remote="github" revision="13" clone-depth="1"/>
+  <project name="hardware_xiaomi" path="hardware/xiaomi" remote="pixel" />
+  <project name="packages_resources_devicesettings" path="packages/resources/devicesettings-custom" remote="pixel" />
+  <project name="lineageos/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" revision="lineage-19.0"/>
 </manifest>
