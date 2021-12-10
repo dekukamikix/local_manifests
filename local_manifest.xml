@@ -14,15 +14,18 @@
   <remove-project name="packages/resources/devicesettings" />
 
   <!-- Surya Device-specific sources -->
-  <project name="silont-project/device_xiaomi_surya" path="device/xiaomi/surya" remote="github" revision="12-test"/>
+  <!--<project name="silont-project/device_xiaomi_surya" path="device/xiaomi/surya" remote="github" revision="12-test"/>-->
+  <project name="dekukamikix/device_xiaomi_surya" path="device/xiaomi/surya" remote="github" revision="12-test"/>
   <project name="silont-project/kernel_xiaomi_surya" path="kernel/xiaomi/surya" remote="github" revision="staging" clone-depth="1"/>
   <project name="silont-project/vendor_xiaomi_surya" path="vendor/xiaomi/surya" remote="github" revision="12-test" clone-depth="1"/>
   <project name="vendor_xiaomi-firmware" path="vendor/xiaomi-firmware" remote="pixel-devices-blobs" />
   
-  <!-- Vayu Device-specific sources -->
+  <!--
+  Vayu Device-specific sources
   <project name="device_xiaomi_vayu" path="device/xiaomi/vayu" remote="chaldea"/>
   <project name="nullxception/kernel_xiaomi_vayu" path="kernel/xiaomi/vayu" remote="github" revision="staging" clone-depth="1"/>
   <project name="vendor_xiaomi_vayu" path="vendor/xiaomi/vayu" remote="chaldea" clone-depth="1"/>
+  -->
 
   <!-- other needed sources -->
   <project name="silont-project/silont-clang" path="prebuilts/clang/host/linux-x86/clang-silont" remote="github" revision="13" clone-depth="1"/>
