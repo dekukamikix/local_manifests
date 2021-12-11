@@ -11,7 +11,7 @@
           fetch="ssh://git@github.com/chaldeaprjkt"
           revision="12" />
   
-  <remove-project name="packages/resources/devicesettings" />
+  <!--<remove-project name="packages/resources/devicesettings" />-->
 
   <!-- Surya Device-specific sources -->
   <!--<project name="silont-project/device_xiaomi_surya" path="device/xiaomi/surya" remote="github" revision="12-test"/>-->
